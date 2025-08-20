@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 
 const crypto = require('crypto');
 const urls = {};
-app.post("/shorten", (req, res) => {
+app.post("/shorturls", (req, res) => {
     const { url } = req.body;
     if (!url) return res.status(400).json({ error: "URL required" });
 
